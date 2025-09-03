@@ -1,39 +1,501 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-	  <meta charset="UTF-8">
-	  <title>Noticia</title>
-	  <link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<div>
-			<h1 id="titulo">Allanamientos y miles de dólares secuestrados: el escándalo por presunta corrupción que acecha a Karina Milei en Argentina</h1>			
-			<p id="parrafo"> 
-				No es la primera <a href="https://cnnespanol.cnn.com/2025/02/19/argentina/dilema-milei-escandalo-libra-criptomoneda-analisis-orix"> 
-				polémica de posible fraude que roza</a> a los Milei en menos de dos años de gobierno. 
-				<a href="https://cnnespanol.cnn.com/2025/02/16/argentina/milei-controversia-criptomoneda-libra-orix">En febrero, la difusión de la criptomoneda $LIBRA</a>, 
-				que subió vertiginosamente para desplomarse a las pocas horas, le implicó múltiples denuncias penales en su contra, 
-				incluso, en Estados Unidos, que continúan en curso. Entonces, Milei negó haber promocionado el activo digital. 
-				<br>				
-				Pero esta nueva acusación se da en plena campaña electoral, a pocos días de las elecciones legislativas en la provincia de Buenos Aires, 
-				previstas para el domingo 7 de septiembre, y a dos meses de los comicios nacionales, a realizarse el 26 de octubre.
-				<br>			
-				Los señalamientos golpean de lleno contra una de las banderas más fuertes de Milei. El autoproclamado “mejor amigo” de Donald Trump en América
-				Latina se presenta como un outsider, dispuesto a romper con los manejos sucios de la política y los derroches del gasto estatal.
-				<br>				
-				Sin embargo, según relata Spagnuolo en dichos audios -cuyo contenido se replica en una denuncia penal a la que tuvo acceso CNN-,
-				a través de la droguería Suizo Argentina el gobierno presuntamente ejecutó un esquema de cobro y pago de coimas relacionadas con
-				la compra y provisión de medicamentos de la Andis, generando un sobreprecio del 8 %, del cual 3 % era enviado a la Secretaría general
-				de la Presidencia. 
-				<br>				
-				En la presentación penal, instruida por Gregorio Dalbón, también abogado de la expresidenta Cristina Fernández de Kirchner,
-				se denuncia al presidente Javier Milei, a su hermana, a Eduardo “Lule” Menem y al dueño de la droguería, Eduardo Kovalivker. 
-			</p>
-		</div>
-		<div id="button-div">
-			<a target="_blank" href="https://cnnespanol.cnn.com/2025/08/26/argentina/escandalo-presunta-corrupcion-karina-milei-argentina-orix">
-				<button id="button">Ir a la noticia completa</button>
-			</a>
-		</div>
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Intervención en el dólar: cuál es el dato que alarmó al equipo económico, qué poder de fuego tiene y qué dice el FMI</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="nd-body">
+	<div id="fusion-app" class="fusion-app | infobae grid">
+		<div class="article-right-rail-centered ">
+			<div class="article-right-rail-centered-layout ">
+				<nav>
+					<div style="position: relative;">
+						<div class="masthead-navbar " id="mastheadnavbar">
+							<div class="site-header" id="siteheader">
+								<div class="sectionnav-container"><span aria-label="Menu"
+										class="hamburger hamburger-wrapper close" role="button" tabindex="-1"><svg
+											viewBox="0 0 28 20" id="hamburger-icon" xmlns="http://www.w3.org/2000/svg"
+											class="hamburger-icon" data-name="hamburger-icon" fill="">
+											<path
+												d="M27.8061 18.2936L23.9009 11.7199C26.6545 9.62581 27.2345 5.75713 25.1799 2.96266C23.0598 0.111715 18.9446 -0.552677 15.9985 1.50445C14.5751 2.49996 13.6279 3.97419 13.3517 5.66252C13.0628 7.34757 13.4737 9.04405 14.498 10.4274C16.2587 12.8169 19.499 13.7133 22.2858 12.6261L26.1944 19.1875C26.3514 19.4517 26.5513 19.6089 26.7784 19.668C26.9927 19.7238 27.2342 19.6816 27.4707 19.5593C28.2062 19.1465 28.0218 18.6387 27.8221 18.2846L27.8061 18.2936ZM24.3917 7.88058C24.0673 9.0572 23.2806 10.0477 22.1932 10.6578C21.1218 11.259 19.8172 11.4316 18.6191 11.1196C16.1094 10.466 14.6138 7.94849 15.2862 5.50947C15.9587 3.07045 18.5492 1.61694 21.0589 2.27047C23.5686 2.92401 25.0642 5.44156 24.3917 7.88058Z"
+												fill=""></path>
+											<path
+												d="M0 1.129C0 0.675362 0.371315 0.307617 0.829355 0.307617H12.9866C13.4446 0.307617 13.8159 0.675362 13.8159 1.129C13.8159 1.58264 13.4446 1.95038 12.9866 1.95038H0.829355C0.371315 1.95038 0 1.58264 0 1.129ZM0 7.04295C0 6.58931 0.371315 6.22157 0.829355 6.22157H10.5951C11.0531 6.22157 11.4245 6.58931 11.4245 7.04295C11.4245 7.49659 11.0531 7.86433 10.5951 7.86433H0.829355C0.371315 7.86433 0 7.49659 0 7.04295ZM0 12.9569C0 12.5033 0.371315 12.1355 0.829355 12.1355H12.9866C13.4446 12.1355 13.8159 12.5033 13.8159 12.9569C13.8159 13.4105 13.4446 13.7783 12.9866 13.7783H0.829355C0.371315 13.7783 0 13.4105 0 12.9569ZM0 18.8709C0 18.4172 0.371315 18.0495 0.829355 18.0495H22.4792C22.9372 18.0495 23.3086 18.4172 23.3086 18.8709C23.3086 19.3245 22.9372 19.6922 22.4792 19.6922H0.829355C0.371315 19.6922 0 19.3245 0 18.8709Z"
+												fill=""></path>
+										</svg></span><a aria-label="infobae" class="site-logo"
+										href="https://www.infobae.com/"><span class="site-logo"><img alt="Infobae"
+												class="logo-image" height="25px"
+												src="https://www.infobae.com/assets/images/logos/logo_infobae_naranja.svg"
+												width="105px"></span></a>
+									<p class="date-info">2 Sep, 2025</p>
+									<div class="section-menu section-nav"><a class="menu-item"
+											href="https://www.infobae.com/?noredirect"
+											rel="noopener noreferrer">Argentina</a><a class="menu-item"
+											href="https://www.infobae.com/colombia/"
+											rel="noopener noreferrer">Colombia</a><a class="menu-item"
+											href="https://www.infobae.com/espana/"
+											rel="noopener noreferrer">España</a><a class="menu-item"
+											href="https://www.infobae.com/mexico/"
+											rel="noopener noreferrer">México</a><a class="menu-item"
+											href="https://www.infobae.com/peru/" rel="noopener noreferrer">Perú</a><a
+											class="menu-item" href="https://www.infobae.com/america/"
+											rel="noopener noreferrer">Mundo</a><a class="menu-item"
+											href="https://www.infobae.com/ultimas-noticias/"
+											rel="noopener noreferrer">Últimas Noticias</a><a class="menu-item"
+											href="https://www.infobae.com/politica/"
+											rel="noopener noreferrer">Política</a><a class="menu-item"
+											href="https://www.infobae.com/economia/"
+											rel="noopener noreferrer">Economía</a><a class="menu-item"
+											href="https://www.infobae.com/teleshow/"
+											rel="noopener noreferrer">Teleshow</a><a class="menu-item"
+											href="https://www.infobae.com/deportes/"
+											rel="noopener noreferrer">Deportes</a><a class="menu-item"
+											href="https://www.infobae.com/sociedad/"
+											rel="noopener noreferrer">Sociedad</a></div>
+									<div class="login-register-container">
+										<div class="content-button"><button aria-label="register link"
+												class="identity-button primary"
+												style="width: 132px;">REGISTRARME</button><button
+												aria-label="register link" class="identity-button secondary"
+												style="width: 132px;">INICIAR SESION</button></div><button
+											class="account-button account-button--mobile" aria-label="myAccount">
+											<div class="user-default-avatar-ctn"><svg class="user-default-avatar"
+													viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M24.544 27.9848C24.544 26.7713 24.5689 25.6161 24.544 24.4608C24.411 21.9425 22.3996 19.9311 19.8813 19.8064C17.3381 19.7649 14.7948 19.7649 12.2515 19.8064C9.63345 19.8563 7.51406 21.9674 7.44757 24.5855C7.42264 25.5745 7.43926 26.5636 7.43095 27.5443V28.0263C3.00101 24.8764 0.665526 19.5405 1.34706 14.1464C2.36935 6.05951 9.75812 0.32469 17.845 1.34698C23.8292 2.10331 28.7578 6.4252 30.2788 12.2681C31.8496 18.194 29.564 24.4691 24.544 27.9848M15.9833 6.50001C13.1575 6.50832 10.8801 8.80225 10.8885 11.6281C10.8968 14.4539 13.1907 16.7313 16.0165 16.7229C18.8424 16.7146 21.1197 14.4207 21.1114 11.5949C21.1114 11.5949 21.1114 11.5865 21.1114 11.5782C21.0948 8.76069 18.8008 6.4917 15.9833 6.50001"
+														fill="#D5D5D5"></path>
+													<circle cx="16" cy="16" r="15.75" stroke="#777777"
+														stroke-width="0.5"></circle>
+												</svg></div>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="header-layout-wrapper"
+							style="position: fixed; z-index: 10; top: 144px; width: 100%;"></div>
+					</div>
+					<div class="width_full" style="height: 144px;"></div>
+				</nav>
+				<div class="article-right-rail-centered-content">
+					<div class="article-right-rail-centered-layout-body ">
+						<div class="top page-container">
+							<div class="masthead-header">
+								<div class="mhh-new">
+									<div id="fusion-static-enter:static-masthead-header"
+										data-fusion-component="static-masthead-header" data-persistent-entry="true"
+										style="display: none;"></div><a aria-label="Logo link" class="mhh-site-logo"
+										href="https://www.infobae.com/" rel="noreferrer noopener"><img alt="Infobae"
+											height="65" loading="eager"
+											src="https://www.infobae.com/assets/images/logos/logo_infobae_naranja.svg"
+											width="280"></a>
+								</div>
+								<div class="ctn-quicklinks">
+									<div class="infinite-slider center ">
+										<div aria-hidden="false" class="slider-track false" id=""
+											style="animation-play-state: running;"><span class="trend"><svg
+													xmlns="http://www.w3.org/2000/svg" width="9" height="14"
+													viewBox="0 0 9 14" fill="none">
+													<path
+														d="M0.5 7.32571L5.92576 0L4.59551 4.65426C4.55053 4.84694 4.66588 5.03095 4.87542 5.03757L8.5 5.09364L1.62071 14C1.62071 14 3.5256 7.8706 3.58169 7.67691C3.63777 7.48322 3.52295 7.32571 3.33193 7.32571H0.5Z"
+														fill="#F68E01"></path>
+												</svg> Trends </span><a class="quicklink"
+												href="/deportes/2025/09/02/el-comunicado-de-alpine-tras-los-comentarios-ofensivos-contra-gasly-por-su-maniobra-con-colapinto/">Alpine
+											</a><a class="quicklink"
+												href="/politica/2025/09/02/jorge-rial-y-mauro-federico-expusieron-en-diputados-tras-la-denuncia-del-gobierno-por-la-difusion-de-audios/">Jorge
+												Rial </a><a class="quicklink"
+												href="/economia/2025/09/02/electro-fans-como-comprar-en-cuotas-y-con-descuentos-de-hasta-70-en-tecnologia-y-electrodomesticos/">Financiamiento
+											</a><a class="quicklink"
+												href="/teleshow/2025/09/02/la-reaccion-de-naanim-timoyko-luego-de-que-juan-alberto-mateyko-aseguro-que-era-el-amor-de-su-vida-y-critico-a-su-actual-pareja/">Naanim
+												Timoyko </a><a class="quicklink"
+												href="/america/mundo/2025/09/02/cuales-son-los-10-destinos-con-escenarios-iconicos-que-marcaron-la-historia-del-cine/">Time
+												Out </a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<section class="article-section page-container">
+							<header class="article-header-wrapper">
+								<div class="article-header">
+									<div class="display_flex justify_space_between article-section-ctn">
+										<div class="display_flex align_items_center"><a aria-label="Economía"
+												class="display_flex align_items_center article-section-tag"
+												href="/economia/">Economía</a><svg class="arrow" fill="none"
+												viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.519579 8C0.240259 8 0.0168041 7.77654 0.0168041 7.49723C0.0168041 7.35358 0.0726679 7.21791 0.176415 7.12214L3.56017 4.00973L0.176415 0.897311C-0.0310792 0.713758 -0.0630014 0.394536 0.120551 0.179062C0.304104 -0.0364133 0.623326 -0.0603549 0.838801 0.123198C0.846781 0.131178 0.862742 0.139159 0.870723 0.147139L4.6535 3.63464C4.861 3.82617 4.86898 4.14539 4.68543 4.35289C4.67744 4.36087 4.66946 4.36885 4.6535 4.38481L0.862742 7.86433C0.766976 7.95212 0.647267 8 0.519579 8V8Z">
+												</path>
+											</svg></div>
+									</div>
+									<h1 id="intervencion-en-el-dolar:-cual-es-el-dato-que-alarmo-al-equipo-economico-que-poder-de-fuego-tiene-y-que-dice-el-fmi"
+										class="display-block article-headline text_align_left">Intervención en el dólar:
+										cuál es el dato que alarmó al equipo económico, qué poder de fuego tiene y qué
+										dice el FMI</h1>
+									<h2 class="article-subheadline text_align_left">El Gobierno advirtió que el bajo
+										volumen de operaciones en mercado cambiario podía sobresaltar su precio con
+										montos muy bajos antes de las elecciones. Los depósitos del Tesoro que se
+										destinarán para influir en el tipo de cambio son los que se venían ahorrando
+										para pagar la deuda </h2>
+									<div class="display_flex align_items_center flex_row byline">
+										<p class="display_flex authors-name-txt-ctn"><span>Por </span> <a
+												aria-label="Mariano Boettner" class="author-name"
+												href="/autor/mariano-boettner/">Mariano Boettner</a></p>
+									</div>
+								</div>
+							</header>
+							<article class="article">
+								<div class="sharebar-container display_flex"
+									style="justify-content: space-between; opacity: 1;">
+									<div class="share-bar-article-date-container share-bar-article-date-divider"><span
+											class="sharebar-article-date">02 Sep, 2025 05:19 p.m.</span><span
+											class="sharebar-article-date share-bar-article-date-separator">Actualizado:
+											02 Sep, 2025 06:37 p.m. AR</span></div>
+									<div class="sharebar-buttons-container display_flex">
+										<div aria-label="Guardar" class="sharebar-buttons button-save" role="button"
+											tabindex="0"><svg width="9" height="12" viewBox="0 0 8 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg" class="saved-icon saved">
+												<path
+													d="M6.64286 0.5V9.31687L4.1116 7.16407L4.11106 7.16361C3.79894 6.89891 3.34392 6.89891 3.03179 7.16361L3.03126 7.16407L0.5 9.31687V0.5H6.64286Z">
+												</path>
+											</svg><span class="buttons-save-text">Guardar</span></div>
+										<div class="sharebar-buttons-separator"></div><button
+											class="sharemenu-buttons display_flex"
+											aria-label="Compartir en Telegram"><svg width="38" height="38"
+												viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white">
+												</rect>
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#C2C2C2">
+												</rect>
+												<path
+													d="M24.9696 12.5511L10.3405 18.0494C10.0623 18.151 9.92701 18.4484 10.0398 18.7168C10.0999 18.8619 10.2277 18.9779 10.3856 19.0214L14.1068 20.0805L15.4975 24.3312C15.6028 24.6576 15.9636 24.839 16.2944 24.7374C16.3921 24.7084 16.4823 24.6504 16.5575 24.5778L18.482 22.6846L22.2558 25.354C22.6091 25.6006 23.0977 25.5281 23.3533 25.1872C23.421 25.1001 23.4661 24.9986 23.4887 24.897L25.9845 13.3707C26.0672 12.979 25.8116 12.5946 25.4056 12.5148C25.2628 12.4858 25.1124 12.5003 24.9771 12.5511M23.1429 15.1116L16.347 20.9147C16.2793 20.9727 16.2342 21.0525 16.2267 21.1395L15.9636 23.381C15.9636 23.4172 15.926 23.4462 15.8884 23.439C15.8583 23.439 15.8358 23.4172 15.8283 23.3955L14.7533 20.0442C14.7007 19.8919 14.7683 19.7251 14.9111 19.638L22.9399 14.836C23.0226 14.7852 23.1353 14.8142 23.1804 14.894C23.2255 14.9666 23.2105 15.0536 23.1504 15.1116"
+													fill="#555555"></path>
+											</svg></button><button class="sharemenu-buttons display_flex"
+											aria-label="Compartir en Linkedin"><svg width="38" height="38"
+												viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white">
+												</rect>
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#C2C2C2">
+												</rect>
+												<path
+													d="M16.5556 27V16.2231H19.963V17.6949C20.0185 17.6368 20.0648 17.5787 20.1111 17.5206C20.8611 16.349 22.2037 15.739 23.537 15.981C25.3889 16.1359 26.8426 17.7046 26.9259 19.6411C26.9722 20.0478 27 20.4641 27 20.8708C27 22.817 27 24.7633 27 26.7095V26.9806H23.5741V26.6805C23.5741 24.8892 23.5741 23.0882 23.5741 21.2969C23.5741 20.8805 23.5278 20.4545 23.4259 20.0478C23.1945 19.1279 22.2963 18.5663 21.4074 18.8084C21.2037 18.8665 21 18.9633 20.8333 19.0989C20.3333 19.4281 20.0185 19.9897 19.9907 20.6094C19.9722 21.1419 19.9722 21.6842 19.9722 22.2167V26.9903H16.5648L16.5556 27ZM11.2222 27V16.2037H11.7407C12.6204 16.2037 13.5 16.2037 14.3796 16.2037C14.5833 16.2037 14.6482 16.2328 14.6482 16.4748V26.9903H11.2222V27ZM11.0093 12.8825C11.0093 11.8465 11.8055 11.0041 12.787 11.0041C12.8426 11.0041 12.8982 11.0041 12.9537 11.0041C13.9445 10.9363 14.7963 11.7206 14.8611 12.7567C14.8611 12.7954 14.8611 12.8438 14.8611 12.8825C14.8426 13.9283 14.0278 14.761 13.0278 14.7416C12.9907 14.7416 12.9537 14.7416 12.9259 14.7416H12.9074C11.9259 14.8191 11.0741 14.0445 11 13.0181C11 12.9697 11 12.931 11 12.8825H11.0093Z"
+													fill="#555555"></path>
+											</svg></button><button class="sharemenu-buttons display_flex"
+											aria-label="Compartir en Twitter"><svg width="38" height="38"
+												viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white">
+												</rect>
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#C2C2C2">
+												</rect>
+												<path
+													d="M11.0391 11L17.2165 19.8249L11 27H12.399L17.8415 20.7182L22.2389 27H27L20.475 17.6786L26.2613 11H24.8623L19.85 16.7855L15.8001 11H11.0391ZM13.0965 12.101H15.2838L24.9423 25.8987H22.7551L13.0965 12.101Z"
+													fill="#555555"></path>
+											</svg></button><button class="sharemenu-buttons display_flex"
+											aria-label="Compartir en Whatsapp"><svg width="38" height="38"
+												viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white">
+												</rect>
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#C2C2C2">
+												</rect>
+												<path
+													d="M21.2863 19.9439C21.0997 19.8551 20.9664 19.9262 20.8419 20.0861C20.6731 20.3261 20.4687 20.5483 20.2909 20.7794C20.1665 20.9393 20.0243 20.9749 19.8376 20.8949C18.6645 20.4239 17.7757 19.6506 17.1269 18.5841C17.0292 18.4242 17.038 18.2997 17.1536 18.1575C17.3225 17.9531 17.4824 17.7576 17.6157 17.5354C17.678 17.4287 17.7135 17.2599 17.678 17.1532C17.4735 16.6111 17.2425 16.0867 17.0114 15.5535C16.9669 15.4557 16.8781 15.3313 16.7892 15.3224C16.4248 15.2602 16.0426 15.1891 15.7316 15.4912C15.1094 16.0778 14.8784 16.7977 15.0383 17.6243C15.1805 18.3619 15.5983 18.9663 16.0426 19.5618C16.887 20.6638 17.8646 21.6237 19.1622 22.1925C19.7932 22.4769 20.4331 22.7613 21.1441 22.7613C21.2685 22.7613 21.393 22.7613 21.5085 22.7346C22.4506 22.5391 23.1172 22.0058 23.0816 21.0193C23.0816 20.9216 23.0194 20.7794 22.9483 20.7438C22.3973 20.4594 21.8462 20.2017 21.2863 19.9439Z"
+													fill="#555555"></path>
+												<path
+													d="M26.9482 17.8724C26.3972 13.4642 22.1401 10.3447 17.7229 11.1179C12.6481 11.9977 9.71521 17.2859 11.6883 21.9963C12.1948 22.6629 12.0615 23.3472 11.8216 24.0849C11.5105 25.027 11.2794 26.0046 11.0039 27C11.1194 26.9733 11.1994 26.9644 11.2794 26.9378C12.5059 26.6178 13.7324 26.3068 14.9411 25.9868C15.1544 25.9335 15.3144 25.9602 15.5099 26.0579C17.1719 26.8667 18.9227 27.0978 20.718 26.7067C24.833 25.7913 27.4548 22.0496 26.9305 17.8902L26.9482 17.8724ZM20.0515 25.4624C18.4784 25.7113 17.003 25.3913 15.6166 24.6003C15.5099 24.5381 15.3411 24.5115 15.2077 24.547C14.4612 24.7248 13.7146 24.9292 12.9147 25.1336C13.1192 24.3693 13.3058 23.6672 13.5102 22.9473C13.5635 22.7606 13.5369 22.6273 13.4391 22.4673C11.0039 18.5479 13.1014 13.5442 17.6163 12.5043C21.2868 11.6511 25.0285 14.1841 25.5884 17.908C26.1395 21.5519 23.6954 24.8936 20.0515 25.4624Z"
+													fill="#555555"></path>
+											</svg></button><button class="sharemenu-buttons display_flex"
+											aria-label="Compartir en Facebook"><svg width="38" height="38"
+												viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" fill="white">
+												</rect>
+												<rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#C2C2C2">
+												</rect>
+												<path
+													d="M17.3544 26.9921V18.9235H15V16.3346H17.3544V16.0805C17.3544 15.3816 17.3291 14.6748 17.3882 13.976C17.3882 12.8642 18.0633 11.8556 19.1266 11.3712C19.5232 11.1965 19.9452 11.0853 20.3755 11.0376C21.2532 10.9741 22.1308 10.99 23 11.0932V13.4201H22.7722C22.2743 13.4201 21.7848 13.4201 21.2869 13.436C20.73 13.4042 20.2489 13.8013 20.2152 14.3254C20.2152 14.373 20.2152 14.4128 20.2152 14.4604C20.1983 15.0481 20.2152 15.6357 20.2152 16.2234C20.2152 16.2552 20.2152 16.2949 20.2321 16.3267H22.9409C22.8228 17.2082 22.7046 18.0579 22.5865 18.9315H20.2236V27H17.3629L17.3544 26.9921Z"
+													fill="#555555"></path>
+											</svg></button>
+									</div>
+								</div>
+								<div class="body-article ">
+									<div class="visual__image image-initial-width">
+										<picture>
+											<source
+												srcset="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=992&amp;height=661&amp;quality=85"
+												media="(min-width: 1000px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=768&amp;height=512&amp;quality=85"
+												media="(min-width: 768px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=577&amp;height=384&amp;quality=85"
+												media="(min-width: 580px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=420&amp;height=280&amp;quality=85"
+												media="(min-width: 350px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=350&amp;height=233&amp;quality=85"
+												media="(min-width: 80px)"><img alt="El Gobierno anunció que el"
+												class="global-image" decoding="async" fetchpriority="high" height="533"
+												loading="eager"
+												src="https://www.infobae.com/resizer/v2/DWFCRATZ5VFIRM5QJ2LQ5RPU3M.JPG?auth=485de2bcde034cb38205e580346366bd8204eed626081b91f703b39a6bd04053&amp;smart=true&amp;width=350&amp;height=233&amp;quality=85"
+												width="800">
+										</picture>
+										<figcaption class="article-figcaption-img">El Gobierno anunció que el Tesoro
+											podrá vender dólares para dar liquidez al mercado. Reuters</figcaption>
+									</div>
+									<p class="paragraph" data-mrf-recirculation="Links inline">Un dato puntual del
+										inicio de la semana en el mercado cambiario alarmó al Gobierno, en el tramo
+										final de la campaña para las elecciones legislativas bonaerenses. En los
+										despachos oficiales detectaron un nivel de <b>falta de liquidez</b> que son
+										consideraron peligroso y decidieron, antes del inicio de la rueda este martes,
+										blandir una herramienta hasta ahora no explorada como es la <b>venta directa
+										</b>de divisas del Tesoro.</p>
+
+									<p class="paragraph" data-mrf-recirculation="Links inline">La sospecha que se
+										disparó en el equipo económico fue que un mercado muy ilíquido estaba expuesto a
+										que con <b>montos muy bajos</b> el tipo de cambio pudiera experimentar<b> saltos
+											bruscos</b> a pocos días de la instancia electoral bonaerense, algo que es
+										exactamente lo contrario a los que intentó instigar el Gobierno en la previa a
+										las elecciones: tranquilidad cambiaria e inflación bajo control. </p>
+
+									<p class="paragraph" data-mrf-recirculation="Links inline">Esa es la explicación que
+										dan en la Casa Rosada y el Palacio de Hacienda sobre por qué el Poder Ejecutivo
+										necesitó acudir a este recurso, lo que <a rel="noopener noreferrer"
+											href="https://www.infobae.com/economia/2025/09/02/segun-economistas-el-gobierno-abandono-la-libre-flotacion-del-dolar-en-medio-de-la-incertidumbre-electoral/"
+											target="_blank">rompe el concepto</a>
+										de libre flotación sin intervención oficial. El Banco Central todavía se
+										mantiene fuera del mercado -por la vía de ventas de reservas, aunque <a
+											rel="noopener noreferrer"
+											href="https://www.infobae.com/economia/2025/08/29/dolar-deuda-y-encajes-como-es-el-mini-plan-de-dos-meses-del-gobierno-para-evitar-problemas-hasta-las-elecciones/">
+                      tomó otro tipo de
+											medidas</a>- pero el que dará el paso al frente es el Ministerio de Economía
+										con sus propios dólares ahorrados. </p>
+
+									<p class="paragraph" data-mrf-recirculation="Links inline">Algunas voces del
+										mercado, de todas formas, no consideran suficiente razón que un día puntual de
+										iliquidez en el mercado oficial como sucedió en el inicio de la semana alcance
+										para explicar un anuncio como el de este martes. La primera reacción en la plaza
+										cambiaria fue una leve caída tras el posteo del secretario de Finanzas, pero
+										también un desplome de los bonos soberanos. </p>
+									<div class="visual__image">
+										<picture>
+											<source
+												srcset="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=992&amp;height=649&amp;quality=85"
+												media="(min-width: 1000px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=768&amp;height=503&amp;quality=85"
+												media="(min-width: 768px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=577&amp;height=378&amp;quality=85"
+												media="(min-width: 580px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=420&amp;height=275&amp;quality=85"
+												media="(min-width: 350px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=350&amp;height=229&amp;quality=85"
+												media="(min-width: 80px)"><img alt="El volumen de operaciones fue"
+												class="global-image" decoding="async" fetchpriority="low" height="1257"
+												loading="lazy"
+												src="https://www.infobae.com/resizer/v2/RBM4CPPMMJFV5NNPJOPPT26JME.jpg?auth=042bab777b899971d35b9b7d47a792d54505ff5db6b6f7304a602405a16ddfc4&amp;smart=true&amp;width=350&amp;height=229&amp;quality=85"
+												width="1920">
+										</picture>
+										<figcaption class="article-figcaption-img">El volumen de operaciones fue bajo el
+											lunes por el feriado en los Estados Unidos. (Fuente: Aurum Valores)
+										</figcaption>
+									</div>
+									<p class="paragraph" data-mrf-recirculation="Links inline">Las dos consecuencias
+										están relacionadas: el tipo de cambio cedió ante la perspectiva de que las
+										intervenciones empiecen antes del techo de flotación -donde pasaría a tomar un
+										rol el BCRA- y los títulos cayeron porque el Tesoro comenzó a utilizar los
+										dólares que guardaba en el cajón para <b>asegurar el pago</b> de capital e
+										intereses. </p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">Según estimaciones del
+										economista <b>Amilcar Collante</b>, el Ministerio de Economía tenía hasta fines
+										de agosto unos <b>USD 1.709 millones</b> ahorrados. De esta cuenta salió, en
+										enero y julio de este año, el pago de los bonos Globales y Bonares en dólares a
+										tenedores locales y del exterior. Así, por lógica, una afectación a esta reserva
+										implicaría menos dólares acumulados para pagar la deuda y una percepción de
+										mayor riesgo para los inversores. </p>
+									<div class="headline-wrapper">
+										<h2 class="header headline-class-h2">Ventas de dólares: las dudas previas</h2>
+									</div>
+									<p class="paragraph" data-mrf-recirculation="Links inline">En los últimos días había
+										trascendido, con información recopilada por el mercado en base a datos del BCRA,
+										que el Tesoro en rigor ya estaba vendiendo divisas en el mercado, aunque la
+										especulación era que el Gobierno había intentado abastecer la <b>demanda puntual
+										</b>de compras, entre otros, de provincias que necesitaban pagar intereses de
+										sus bonos estos días. Buenos Aires, por ejemplo, pagó este martes USD 380
+										millones. </p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">Las tenencias del Tesoro,
+										antes, habían tenido un crecimiento entre junio y julio, cuando el Gobierno
+										comenzó a realizar compras <b>“en bloque”</b>-no de manera abierta en el mercado
+										sino ante vendedores particulares- como acción reparatoria a la distancia a la
+										que había quedado el Gobierno con la meta de reservas comprometida con el FMI.
+									</p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">Esos <i>block trades</i>
+										reportaron, según información oficial, unos <b>USD 1.464 millones</b>, a un
+										precio promedio de $1.260,13, según datos provistos en el último informe de
+										Jefatura de Gabinete presentado por Guillermo Francos el miércoles pasado ante
+										la Cámara de Diputados. Empresas y provincias que conseguían financiamiento en
+										dólares aportaron la pata “vendedora” en ese caso.</p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">El ciclo cambió, según
+										registró la consultora financiera 1816, durante agosto. El Tesoro comenzó a
+										perder de manera paulatina divisas acumuladas anteriormente. En las últimas dos
+										semanas de agosto, los depósitos en dólares del Tesoro en el Banco Central
+										descendieron USD 354 millones.</p>
+									<div class="visual__image">
+										<picture>
+											<source
+												srcset="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=992&amp;height=794&amp;quality=85"
+												media="(min-width: 1000px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=768&amp;height=615&amp;quality=85"
+												media="(min-width: 768px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=577&amp;height=462&amp;quality=85"
+												media="(min-width: 580px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=420&amp;height=336&amp;quality=85"
+												media="(min-width: 350px)">
+											<source
+												srcset="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=350&amp;height=280&amp;quality=85"
+												media="(min-width: 80px)"><img alt="Qué cantidad de depósitos tiene"
+												class="global-image" decoding="async" fetchpriority="low" height="1537"
+												loading="lazy"
+												src="https://www.infobae.com/resizer/v2/5TEDT4IC5VAETJ2VSYIX2ITKHA.jpg?auth=5e5b0a9de8836ff51cb3f024c2faa6e4a89666c74f893c390eedf6ad7b5996b1&amp;smart=true&amp;width=350&amp;height=280&amp;quality=85"
+												width="1920">
+										</picture>
+										<figcaption class="article-figcaption-img">Qué cantidad de depósitos tiene el
+											Tesoro en su cuenta corriente en el BCRA. (Fuente: Amilcar Collante)
+										</figcaption>
+									</div>
+									<p class="paragraph" data-mrf-recirculation="Links inline">En cuatro de las once
+										ruedas cambiarias entre el 12 y el 21 de agosto, la caída de depósitos en
+										dólares coincidió exactamente con un aumento equivalente de depósitos en pesos
+										del Tesoro en el BCRA. “Las operaciones de esas cuatro ruedas suman USD 133
+										millones, pero no podemos descartar que las ventas hayan sido superiores, dada
+										la caída de depósitos, que alcanzó los mencionados USD 354 millones entre el 11
+										y 27 de agosto”, señalaron desde 1816.</p>
+									<div class="headline-wrapper">
+										<h2 class="header headline-class-h2">FMI: qué dice el acuerdo sobre ventas de
+											dólares</h2>
+									</div>
+									<p class="paragraph" data-mrf-recirculation="Links inline">La particularidad del
+										Tesoro vendiendo sus tenencias de dólares despertó, también, la discusión sobre
+										si es un escenario contemplado en el <b>acuerdo con el FMI</b> anunciado hace
+										menos de cinco meses. Los documentos de la presentación de ese programa, en
+										abril, y la primera revisión, en julio, no hacen referencia a un rol vendedor
+										del BCRA cuando el dólar flote dentro de la banda, aunque sí para comprar
+										divisas.</p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">“El BCRA garantizará el
+										cumplimiento de la banda mediante la compra de divisas ofrecidas en su mínimo y
+										la venta de divisas en su máximo. Dentro de la banda, el BCRA comprará divisas a
+										su discreción, incluso ante grandes liquidaciones de divisas, y de acuerdo con
+										los objetivos del programa, incluyendo las metas de acumulación de reservas.
+										<b>No se prevén ventas de divisas dentro de la banda"</b>, reza el acuerdo. No
+										está mencionado el Tesoro. </p>
+									<p class="paragraph" data-mrf-recirculation="Links inline">En un documento que
+										publicó el Central para explicar su marco de acción durante la flotación del
+										dólar, explicó: “Se promoverá la flotación libre del tipo de cambio entre los
+										límites establecidos para el régimen. El BCRA podrá considerar la compra de
+										dólares en función de sus objetivos macroeconómicos y de acumulación de reservas
+										internacionales (RIN), así como la <b>venta de dólares para morigerar
+											volatilidad inusual</b>. En ningún caso la intervención será esterilizada",
+										planteó.</p>
+
+									<p class="paragraph" data-mrf-recirculation="Links inline">Más allá de las
+										diferencias de fraseo entre el primer párrafo presente en el staff report y el
+										segundo, que corresponde a un comunicado del Central, la posibilidad de ventas
+										dentro de la banda está dentro del menú contemplado en el acuerdo. De todas
+										formas, el Gobierno termina por acudir a este recurso luego de varias semanas de
+										insistir en que el tipo de cambio flota libremente y sin intervención y pocos
+										días de una instancia electoral decisiva. </p>
+									<div class="second-saved-buttons">
+										<div class="body-share-note">
+											<div class="share-note-txt">Compartir nota:</div>
+											<div class="sharebar-container display_flex"
+												style="display: flex; justify-content: center; width: auto; height: 48px; opacity: 1;">
+												<div class="share-bar-article-date-container ">
+													<span class="sharebar-article-date"></span>
+												</div>
+												<div class="sharebar-buttons-container display_flex">
+													<button class="sharemenu-buttons display_flex"
+														aria-label="Compartir en Telegram">
+														<svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																fill="white"></rect>
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																stroke="#C2C2C2"></rect>
+															<path
+																d="M24.9696 12.5511L10.3405 18.0494C10.0623 18.151 9.92701 18.4484 10.0398 18.7168C10.0999 18.8619 10.2277 18.9779 10.3856 19.0214L14.1068 20.0805L15.4975 24.3312C15.6028 24.6576 15.9636 24.839 16.2944 24.7374C16.3921 24.7084 16.4823 24.6504 16.5575 24.5778L18.482 22.6846L22.2558 25.354C22.6091 25.6006 23.0977 25.5281 23.3533 25.1872C23.421 25.1001 23.4661 24.9986 23.4887 24.897L25.9845 13.3707C26.0672 12.979 25.8116 12.5946 25.4056 12.5148C25.2628 12.4858 25.1124 12.5003 24.9771 12.5511M23.1429 15.1116L16.347 20.9147C16.2793 20.9727 16.2342 21.0525 16.2267 21.1395L15.9636 23.381C15.9636 23.4172 15.926 23.4462 15.8884 23.439C15.8583 23.439 15.8358 23.4172 15.8283 23.3955L14.7533 20.0442C14.7007 19.8919 14.7683 19.7251 14.9111 19.638L22.9399 14.836C23.0226 14.7852 23.1353 14.8142 23.1804 14.894C23.2255 14.9666 23.2105 15.0536 23.1504 15.1116"
+																fill="#555555"></path>
+														</svg>
+													</button>
+													<button class="sharemenu-buttons display_flex"
+														aria-label="Compartir en Linkedin">
+														<svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																fill="white"></rect>
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																stroke="#C2C2C2"></rect>
+															<path
+																d="M16.5556 27V16.2231H19.963V17.6949C20.0185 17.6368 20.0648 17.5787 20.1111 17.5206C20.8611 16.349 22.2037 15.739 23.537 15.981C25.3889 16.1359 26.8426 17.7046 26.9259 19.6411C26.9722 20.0478 27 20.4641 27 20.8708C27 22.817 27 24.7633 27 26.7095V26.9806H23.5741V26.6805C23.5741 24.8892 23.5741 23.0882 23.5741 21.2969C23.5741 20.8805 23.5278 20.4545 23.4259 20.0478C23.1945 19.1279 22.2963 18.5663 21.4074 18.8084C21.2037 18.8665 21 18.9633 20.8333 19.0989C20.3333 19.4281 20.0185 19.9897 19.9907 20.6094C19.9722 21.1419 19.9722 21.6842 19.9722 22.2167V26.9903H16.5648L16.5556 27ZM11.2222 27V16.2037H11.7407C12.6204 16.2037 13.5 16.2037 14.3796 16.2037C14.5833 16.2037 14.6482 16.2328 14.6482 16.4748V26.9903H11.2222V27ZM11.0093 12.8825C11.0093 11.8465 11.8055 11.0041 12.787 11.0041C12.8426 11.0041 12.8982 11.0041 12.9537 11.0041C13.9445 10.9363 14.7963 11.7206 14.8611 12.7567C14.8611 12.7954 14.8611 12.8438 14.8611 12.8825C14.8426 13.9283 14.0278 14.761 13.0278 14.7416C12.9907 14.7416 12.9537 14.7416 12.9259 14.7416H12.9074C11.9259 14.8191 11.0741 14.0445 11 13.0181C11 12.9697 11 12.931 11 12.8825H11.0093Z"
+																fill="#555555"></path>
+														</svg>
+													</button>
+													<button class="sharemenu-buttons display_flex"
+														aria-label="Compartir en Twitter">
+														<svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																fill="white"></rect>
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																stroke="#C2C2C2"></rect>
+															<path
+																d="M11.0391 11L17.2165 19.8249L11 27H12.399L17.8415 20.7182L22.2389 27H27L20.475 17.6786L26.2613 11H24.8623L19.85 16.7855L15.8001 11H11.0391ZM13.0965 12.101H15.2838L24.9423 25.8987H22.7551L13.0965 12.101Z"
+																fill="#555555"></path>
+														</svg>
+													</button>
+													<button class="sharemenu-buttons display_flex"
+														aria-label="Compartir en Whatsapp">
+														<svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																fill="white"></rect>
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																stroke="#C2C2C2"></rect>
+															<path
+																d="M21.2863 19.9439C21.0997 19.8551 20.9664 19.9262 20.8419 20.0861C20.6731 20.3261 20.4687 20.5483 20.2909 20.7794C20.1665 20.9393 20.0243 20.9749 19.8376 20.8949C18.6645 20.4239 17.7757 19.6506 17.1269 18.5841C17.0292 18.4242 17.038 18.2997 17.1536 18.1575C17.3225 17.9531 17.4824 17.7576 17.6157 17.5354C17.678 17.4287 17.7135 17.2599 17.678 17.1532C17.4735 16.6111 17.2425 16.0867 17.0114 15.5535C16.9669 15.4557 16.8781 15.3313 16.7892 15.3224C16.4248 15.2602 16.0426 15.1891 15.7316 15.4912C15.1094 16.0778 14.8784 16.7977 15.0383 17.6243C15.1805 18.3619 15.5983 18.9663 16.0426 19.5618C16.887 20.6638 17.8646 21.6237 19.1622 22.1925C19.7932 22.4769 20.4331 22.7613 21.1441 22.7613C21.2685 22.7613 21.393 22.7613 21.5085 22.7346C22.4506 22.5391 23.1172 22.0058 23.0816 21.0193C23.0816 20.9216 23.0194 20.7794 22.9483 20.7438C22.3973 20.4594 21.8462 20.2017 21.2863 19.9439Z"
+																fill="#555555"></path>
+															<path
+																d="M26.9482 17.8724C26.3972 13.4642 22.1401 10.3447 17.7229 11.1179C12.6481 11.9977 9.71521 17.2859 11.6883 21.9963C12.1948 22.6629 12.0615 23.3472 11.8216 24.0849C11.5105 25.027 11.2794 26.0046 11.0039 27C11.1194 26.9733 11.1994 26.9644 11.2794 26.9378C12.5059 26.6178 13.7324 26.3068 14.9411 25.9868C15.1544 25.9335 15.3144 25.9602 15.5099 26.0579C17.1719 26.8667 18.9227 27.0978 20.718 26.7067C24.833 25.7913 27.4548 22.0496 26.9305 17.8902L26.9482 17.8724ZM20.0515 25.4624C18.4784 25.7113 17.003 25.3913 15.6166 24.6003C15.5099 24.5381 15.3411 24.5115 15.2077 24.547C14.4612 24.7248 13.7146 24.9292 12.9147 25.1336C13.1192 24.3693 13.3058 23.6672 13.5102 22.9473C13.5635 22.7606 13.5369 22.6273 13.4391 22.4673C11.0039 18.5479 13.1014 13.5442 17.6163 12.5043C21.2868 11.6511 25.0285 14.1841 25.5884 17.908C26.1395 21.5519 23.6954 24.8936 20.0515 25.4624Z"
+																fill="#555555"></path>
+														</svg></button><button class="sharemenu-buttons display_flex"
+														aria-label="Compartir en Facebook"><svg width="38" height="38"
+															viewBox="0 0 38 38" fill="none"
+															xmlns="http://www.w3.org/2000/svg">
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																fill="white"></rect>
+															<rect x="0.5" y="0.5" width="37" height="37" rx="18.5"
+																stroke="#C2C2C2"></rect>
+															<path
+																d="M17.3544 26.9921V18.9235H15V16.3346H17.3544V16.0805C17.3544 15.3816 17.3291 14.6748 17.3882 13.976C17.3882 12.8642 18.0633 11.8556 19.1266 11.3712C19.5232 11.1965 19.9452 11.0853 20.3755 11.0376C21.2532 10.9741 22.1308 10.99 23 11.0932V13.4201H22.7722C22.2743 13.4201 21.7848 13.4201 21.2869 13.436C20.73 13.4042 20.2489 13.8013 20.2152 14.3254C20.2152 14.373 20.2152 14.4128 20.2152 14.4604C20.1983 15.0481 20.2152 15.6357 20.2152 16.2234C20.2152 16.2552 20.2152 16.2949 20.2321 16.3267H22.9409C22.8228 17.2082 22.7046 18.0579 22.5865 18.9315H20.2236V27H17.3629L17.3544 26.9921Z"
+																fill="#555555"></path>
+														</svg></button>
+												</div>
+											</div>
+										</div>
+									</div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
